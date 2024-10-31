@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ul{
+    padding: 0px!important;
+}
+
+/* commen-sec */
+
+@media (min-width:1440px) {
+    .container{
+    max-width:1170px;
+    width: 1140px;
+    margin: auto;  
+    padding: 0px 15px;
+    }
+}
+
+
+.cmn-head{
+    font-family: "Inknut Antiqua", serif;
+    font-size:38px;
+    font-weight:400;
+    color:rgba(0, 123, 255, 1);
+}
+
+.cmn-span{
+    color: rgba(255, 193, 7, 1);
+}
+
+.cmn-head::after{
+    content: '';
+    display: inline-block;
+    width: 170px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: rgba(255, 193, 7, 1);
+}
+
+/* header-sec */
+
+@media (max-width:991px) and (min-width:600px){
+    .navbar-main-div{
+        flex-wrap: wrap;
+    }
+    .navbar-child-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }  
+}
+
+@media (max-width:600px) and (min-width:344px){
+    .navbar-main-div{
+        flex-wrap: wrap;
+    }
+    .navbar-child-div{
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }  
+    .navbar-child-div ul {
+        flex-direction: column;
+    
+    }
+}
+
+.header-sec{
+    padding:20px 0px 15px 0px;
+}
+
+.navbar-main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-child-div ul{
+    display: flex;
+}
+
+.navbar-child-div ul li{
+    list-style: none;
+    padding: 0px 15px;
+}
+
+.navbar-child-div a{
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:rgba(52, 58, 64, 1);
+}
+
+.nav-btn{
+    color: rgba(0, 123, 255, 1) !important;
+    padding: 21px 69px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 200px;
+}
+
+/*  banner-sec */
+
+.banner-sec{
+    background-image: url('../image/Contact-banner.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 242px 0px;
+} 
+
+.banner-main-div h1{
+    font-family: "Inknut Antiqua", serif;
+    font-size:48px;
+    font-weight:600;
+    color:rgba(244, 178, 5, 1);
+    text-align: center;
+}
+
+.banner-main-div span::before{
+    content: '';
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin:18px 0px 0px -100px;
+    background-image: url('../image/Destination-banner-icon.svg');
+}
+
+.banner-main-div span{
+padding-left: 100px;
+color: rgba(0, 123, 255, 1);
+}
+
+
+/* card-sec */
+
+@media (max-width:991px) and (min-width:600px) {
+    .card-main-div{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .card-child-div{
+        width: 45%;
+    }
+}
+@media (max-width:600px) and (min-width:344px) {
+    .card-main-div{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .card-child-div{
+        width: 100%;
+    }
+}
+
+.card-sec{
+    padding: 70px 0px;
+}
+
+.card-main-div{
+    display: flex;
+}
+
+.card-child-div{
+    min-width: 33%;
+    margin: 10px 10px;
+    padding: 40px 20px;
+    border-radius: 2px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.card-child-div i{
+    color: rgba(0, 123, 255, 1);
+    font-size: 46px;
+}
+
+.card-child-div h2{
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:400;
+    color:rgba(40, 167, 69, 1); 
+    padding-bottom: 10px;
+}
+
+.card-child-div a{
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(52, 58, 64, 1);
+    display: block;
+}
+
+/* Get In Touch */
+
+@media (max-width:991px) and (min-width:600px) {
+    .Touch-main-div{
+        flex-wrap: wrap;
+    }
+    .Touch-child-div{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width:600px) and (min-width:344px) {
+    .Touch-main-div{
+        flex-wrap: wrap;
+    }
+    .Touch-child-div{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .Touch-child-div img{
+        width: 100%;
+    }
+}
+
+.Touch-sec{
+    padding-bottom: 80px;
+}
+
+.Touch-main-div{
+    display: flex;
+}
+
+.Touch-child-div{
+    min-width: 50%;
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+
+.Touch-child-div1{
+    padding: 45px;
+    background-color: rgba(236, 236, 236, 1);
+}
+
+.Touch-child-div p{
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(52, 58, 64, 1);
+    max-width: 466px;
+    padding-bottom: 30px;
+}
+
+.Touch-child-div input{
+    background-color: rgba(236, 236, 236, 1) ;
+    border-bottom-color:rgba(227, 227, 227, 1) ;
+    border-bottom-style:solid ;
+    border-top-color:transparent ;
+    border-right-color:transparent ;
+    border-left-color:transparent ;
+    width: 90%;
+    font-family: "Istok Web", sans-serif;
+    font-size:16px;
+    font-weight:400;
+    color:rgba(150, 150, 150, 1);
+    margin-bottom: 70px;
+}
+
+.Touch-child-div h3{
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:400;
+    color:rgba(40, 167, 69, 1); 
+}
+
+.Touch-child-div a{
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-size:20px;
+    font-weight:060;
+    color:white;
+    background-color: rgba(0, 123, 255, 1);
+    padding: 21px 69px;
+    border-radius: 100px;
+}
+
+.Touch-child-div1 span{
+    display: block;
+}
+
+
+
+.my-input{
+
+}
+
+
+
+
+/* footer-sec */
+
+@media (max-width:767px) and (min-width:344px){
+    .footer-top-div{
+        text-align: center;
+    }
+    .footer-main-div{
+        flex-wrap: wrap;  
+        text-align: center;
+    }
+    .footer-child-div{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px !important;
+    }
+}
+
+.footer-sec{
+    background-image: url('../image/footer\ bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0px 334px 0px;
+}
+
+.footer-main-div{
+    display: flex;
+}
+
+.footer-child-div{
+    padding: 0px 10px;
+    margin-right: 100px;
+}
+
+.footer-child-div p{
+    max-width: 463px;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(255, 255, 255, 1);
+}
+
+.footer-child-div a{
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(255, 255, 255, 1);
+}
+
+.footer-child-div span{
+    display: block;
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:500;
+    color:rgba(255, 255, 255, 1);
+    padding: 0px 0px 40px 27px;
+}
+
+.footer-child-div ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.footer-child-div i{
+    color: rgba(0, 123, 255, 1);
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 20px 20px 0px 0px;
+}
+
+.footer-bottom-div{
+    text-align: center;
+    padding: 26px 0px;
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:500;
+    background-color: rgba(255, 193, 7, 1);
+    color: rgba(0, 123, 255, 1);
+}

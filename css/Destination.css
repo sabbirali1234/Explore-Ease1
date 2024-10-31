@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ul{
+    padding: 0px!important;
+}
+
+/* commen-sec */
+
+@media (min-width:1440px) {
+    .container{
+    max-width:1170px;
+    width: 1140px;
+    margin: auto;  
+    padding: 0px 15px;
+    }
+}
+
+
+.cmn-head{
+    font-family: "Inknut Antiqua", serif;
+    font-size:38px;
+    font-weight:400;
+    color:rgba(0, 123, 255, 1);
+}
+
+.cmn-span{
+    color: rgba(255, 193, 7, 1);
+}
+
+.cmn-head::after{
+    content: '';
+    display: inline-block;
+    width: 170px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: rgba(255, 193, 7, 1);
+}
+
+/* header-sec */
+
+@media (max-width:991px) and (min-width:600px){
+    .navbar-main-div{
+        flex-wrap: wrap;
+    }
+    .navbar-child-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }  
+}
+
+@media (max-width:600px) and (min-width:344px){
+    .navbar-main-div{
+        flex-wrap: wrap;
+    }
+    .navbar-child-div{
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }  
+    .navbar-child-div ul {
+        flex-direction: column;
+    
+    }
+}
+
+.header-sec{
+    padding:20px 0px 15px 0px;
+}
+
+.navbar-main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-child-div ul{
+    display: flex;
+}
+
+.navbar-child-div ul li{
+    list-style: none;
+    padding: 0px 15px;
+}
+
+.navbar-child-div a{
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:rgba(52, 58, 64, 1);
+}
+
+.nav-btn{
+    color: rgba(0, 123, 255, 1) !important;
+    padding: 21px 69px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 200px;
+}
+
+/*  banner-sec */
+
+.banner-sec{
+    background-image: url('../image/Destination-banner.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 242px 0px;
+} 
+
+.banner-main-div h1{
+    font-family: "Inknut Antiqua", serif;
+    font-size:48px;
+    font-weight:600;
+    color:rgba(244, 178, 5, 1);
+    text-align: center;
+}
+
+.banner-main-div span::before{
+    content: '';
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin:18px 0px 0px -100px;
+    background-image: url('../image/Destination-banner-icon.svg');
+}
+
+.banner-main-div span{
+padding-left: 100px;
+color: rgba(0, 123, 255, 1);
+}
+
+/* Explorer Every Corner  */
+
+@media (max-width:767px) and (min-width:344px){
+    .Explorer-main-div{
+        flex-wrap: wrap;
+    }
+    .Explorer-child-div{
+        width: 100%;
+    }
+}
+
+.Explorer-sec{
+    padding: 80px 0px;
+}
+
+
+.Explorer-main-div{
+    display: flex;
+    padding: 0px 10px;
+}
+
+.Explorer-child-div{
+    min-width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Explorer-child-div img{
+    width: 100%;
+}
+
+.Explorer-child-div p{
+    max-width: 524px;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(52, 58, 64, 1);
+}
+
+
+/* Top Attractions */
+
+@media (max-width:991px) and (min-width:767px){
+    .Attractions-top-div{
+        text-align: center;
+    }
+    .Attractions-main-div{
+        align-items: center;
+        flex-direction: column;
+    }
+    .Attractions-child-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:767px) and (min-width:344px){
+    .Attractions-top-div{
+        text-align: center;
+    }
+    .Attractions-main-div{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .Attractions-child-div{
+     width: 100%;
+    }
+}
+
+
+.Attractions-top-div{
+    padding: 0px 10px;
+}
+
+.Attractions-main-div{
+    display: flex;
+
+}
+
+.Attractions-child-div{
+    min-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+}
+
+.Attractions-inner-child{
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.25);
+}
+
+.Attractions-inner-child img{
+    width: 100%;
+}
+
+.Attractions-child-div span{
+    padding: 1px 28px;
+    color: rgba(0, 123, 255, 1);
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    font-family: "Inknut Antiqua", serif;
+    font-size:15px;
+    font-weight:500;
+    margin: 15px 0px 0px 205px;
+}
+
+.Attractions-inner-child h3{
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:500;
+    color:rgba(40, 167, 69, 1);
+}
+
+.Attractions-inner-child a{
+    font-family: "Istok Web", sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color: black;
+}
+
+
+/* Travel Tips */
+
+@media (max-width:991px) and (min-width:344px) {
+    .Travel-Tips-main-div{
+        flex-wrap: wrap;
+    }
+    .Travel-Tips-child-div{
+        width: 100%;
+    }
+}
+
+
+.Travel-Tips-sec{
+    background-image: url('../image/Travel-Tips-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0px 34px 0px;
+}
+
+.Travel-Tips-main-div{
+    display: flex;
+}
+
+.Travel-Tips-child-div{
+    min-width: 50%;
+    padding: 0px 10px;
+}
+
+.Travel-Tips-child-div p{
+    max-width: 524px;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color: rgba(52, 58, 64, 1);
+    margin-bottom: 15px;
+}
+
+.plus{
+    padding: 4px 20px;
+    background-color:rgba(236, 236, 236, 1);
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inknut Antiqua", serif;
+    font-size:20px;
+    font-weight:500;
+    color:rgba(52, 58, 64, 1);
+    border-radius: 2px;
+    margin-top: 9px;
+}
+
+.Travel-Tips-inner-child{
+    display: flex;
+    padding-left: 20px;
+}
+
+.Travel-Tips-inner{
+    width: 50%;
+}
+
+.Travel-Tips-inner img{
+    width: 100%;
+    min-height: 380px !important;
+    object-fit:cover;
+}
+
+.Travel-Tips-inner-child img{
+    width: 100%;
+    padding-top: 20px;
+    min-height: 300px;
+    object-fit:cover;
+    border-radius: 5px;
+}
+
+/* Discover A Mesmerizing Nature  */
+
+
+@media (max-width:991px) and (min-width:576px){
+    .Discover-sec img{
+        padding-top: 380px;
+    } 
+}
+
+@media (max-width:576px) and (min-width:450px){
+    .Discover-sec img{
+        padding-top: 550px;
+        width: 100%;
+    } 
+    .Discover-main-div{
+        text-align: center;
+    }
+}
+@media (max-width:450px) and (min-width:344px){
+    .Discover-sec img{
+        padding-top: 650px;
+        width: 100%;
+    } 
+    .Discover-main-div{
+        text-align: center;
+    }
+}
+
+.Discover-sec{
+    background-color: rgba(0, 123, 255, 1);
+    margin-top: 80px;
+    padding:40px 0px 40px 0px ;
+}
+
+
+.Discover-child-div h2{
+    font-family: "Inknut Antiqua", serif;
+    font-size:38px;
+    font-weight:400;
+    color:white;
+    max-width: 700px;
+    line-height: 70px;
+}
+
+.Discover-sec img{
+    position: absolute;
+    margin-top: -135px;
+    right: 0px;
+}
+
+.Discover-child-div a{
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:rgba(0, 123, 255, 1);
+    padding: 20px 50px;
+    background-color: white;
+    border-radius: 200px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+/* Visual Gallery */
+
+
+@media (max-width:991px) and (min-width:768px){
+    .Gallery-sec{
+        margin-top: 300px;
+    }
+    .Gallery-top-div{
+        text-align: center;
+    }
+    .Gallery-child-div{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .Gallery-inner-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) and (min-width:344px){
+    .Gallery-sec{
+        margin-top: 400px;
+    }
+    .Gallery-top-div{
+        text-align: center;
+    }
+    .Gallery-child-div{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .Gallery-inner-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .Gallery-inner-child img{
+        width: 100%;
+    }
+}
+
+.Gallery-sec{
+    padding: 70px 0px;
+}
+
+
+
+.Gallery-child-div{
+    display: flex;
+}
+
+.Gallery-inner-child img{
+    padding: 8px 10px;
+    
+}
+
+.img-1{
+    width: 463px;
+    height: 443px;
+    object-fit: cover;
+}
+
+.img-2{
+    width: 657px;
+    height: 443px;
+    object-fit: cover;
+}
+
+.Gallery-inner-child h3{
+    position: absolute;
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:500;
+    color:rgba(255, 255, 255, 1);
+    margin: 315px 0px 0px 50px;
+}
+
+.Gallery-inner-child span{
+    position: absolute;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(255, 255, 255, 1);
+    margin: 371px 0px 0px 50px;
+}
+
+/* footer-sec */
+
+@media (max-width:767px) and (min-width:344px){
+    .footer-top-div{
+        text-align: center;
+    }
+    .footer-main-div{
+        flex-wrap: wrap;  
+        text-align: center;
+    }
+    .footer-child-div{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px !important;
+    }
+    .footer-child-div i{
+        
+    }
+}
+
+.footer-sec{
+    background-image: url('../image/footer\ bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0px 334px 0px;
+}
+
+.footer-main-div{
+    display: flex;
+}
+
+.footer-child-div{
+    padding: 0px 10px;
+    margin-right: 100px;
+}
+
+.footer-child-div p{
+    max-width: 463px;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(255, 255, 255, 1);
+}
+
+.footer-child-div a{
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(255, 255, 255, 1);
+}
+
+.footer-child-div span{
+    display: block;
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:500;
+    color:rgba(255, 255, 255, 1);
+    padding: 0px 0px 40px 27px;
+}
+
+.footer-child-div ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.footer-child-div i{
+    color: rgba(0, 123, 255, 1);
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 20px 20px 0px 0px;
+}
+
+.footer-bottom-div{
+    text-align: center;
+    padding: 26px 0px;
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:500;
+    background-color: rgba(255, 193, 7, 1);
+    color: rgba(0, 123, 255, 1);
+}

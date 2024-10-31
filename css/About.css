@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ul{
+    padding: 0px!important;
+}
+
+/* commen-sec */
+
+@media (min-width:1440px) {
+    .container{
+    max-width:1170px;
+    width: 1140px;
+    margin: auto;  
+    padding: 0px 15px;
+    }
+}
+
+
+.cmn-head{
+    font-family: "Inknut Antiqua", serif;
+    font-size:38px;
+    font-weight:400;
+    color:rgba(0, 123, 255, 1);
+}
+
+.cmn-span{
+    color: rgba(255, 193, 7, 1);
+}
+
+.cmn-head::after{
+    content: '';
+    display: inline-block;
+    width: 170px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: rgba(255, 193, 7, 1);
+}
+
+/* header-sec */
+
+@media (max-width:991px) and (min-width:600px){
+    .navbar-main-div{
+        flex-wrap: wrap;
+    }
+    .navbar-child-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }  
+    .banner-main-div{
+        text-align: center;
+    }
+    .banner-sec img{
+        width: 600px;
+    }
+}
+
+@media (max-width:600px) and (min-width:344px){
+    .navbar-main-div{
+        flex-wrap: wrap;
+    }
+    .navbar-child-div{
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }  
+    .navbar-child-div ul {
+        flex-direction: column;
+    
+    }
+    .banner-main-div{
+        text-align: center;
+        
+    }
+    .banner-sec img{
+        width: 340px;
+    }
+}
+
+.header-sec{
+    background-image: url('../image/About-banner.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:36px 0px 251px 0px;
+    }
+
+.navbar-main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-child-div ul{
+    display: flex;
+}
+
+.navbar-child-div ul li{
+    list-style: none;
+    padding: 0px 15px;
+}
+
+.navbar-child-div a{
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:rgba(52, 58, 64, 1);
+}
+
+.nav-btn{
+    color: rgba(0, 123, 255, 1) !important;
+    padding: 21px 69px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 200px;
+}
+
+.banner-main-div h1{
+    font-family: "Inknut Antiqua", serif;
+    font-size:42px;
+    font-weight:600;
+    color:rgba(244, 178, 5, 1);
+    padding-top: 442px;
+    margin-left: 30px;
+}
+
+.banner-sec img{
+    position: absolute;
+    margin: 170px 0px 0px 0px;
+    left: 0px;
+    height: 630px;
+}
+
+/*  What We Give */
+
+@media (max-width:991px) and (min-width:575px){
+    .Give-main-div{
+        flex-wrap: wrap;
+    }
+    .Give-child-div{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+       
+    }  
+}
+
+@media (max-width:575px) and (min-width:344px){
+    .Give-main-div{
+        flex-wrap: wrap;
+    }
+    .Give-child-div{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+}
+
+.Give-sec{
+    padding: 80px 0px;
+}
+
+.Give-main-div{
+    display: flex;
+}
+
+.Give-child-div{
+    min-width:50%;
+    padding: 0px 15px;
+}
+
+.Give-child-div img{
+    width: 100% ;
+    height: 768px;
+}
+
+.Give-child-div p{
+    max-width: 466px;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(52, 58, 64, 1);
+    padding-bottom: 5px;
+}
+
+.icon{
+    width: 50px !important;
+    height: 50px !important;
+    display: block;
+    box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    margin:0px 10px 81px 0px;
+   padding-block: 11px;
+}
+
+.Give-inner-child{
+    display: flex;
+}
+
+.Give-inner h3{
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:700;
+    color:rgba(40, 167, 69, 1);
+}
+
+.Give-child-div h2{
+    padding-top: 85px;
+    max-width: 285px;
+    line-height: 55px;
+}
+
+/* Meet Our Team */
+@media (max-width:991px) and (min-width:576px){
+    .Team-top-div{
+        text-align: center;
+    }
+    .Team-main-div{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .Team-child-div{
+        margin-top: 20px;
+        width: 50%;
+    }
+}
+@media (max-width:575px) and (min-width:344px){
+    .Team-top-div{
+        text-align: center;
+    }
+    .Team-main-div{
+        flex-wrap: wrap;
+    }
+    .Team-child-div{
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.Team-sec{
+    padding-bottom: 22px;
+}
+
+.Team-main-div{
+    display: flex;
+}
+
+.Team-child-div{
+    min-width: 33%;
+    padding: 0px 10px;
+}
+
+.Team-child-div img{
+    width: 100%;
+}
+
+/* Discover A Mesmerizing Nature  */
+
+
+@media (max-width:991px) and (min-width:576px){
+    .Discover-sec img{
+        padding-top: 380px;
+    } 
+}
+
+@media (max-width:576px) and (min-width:450px){
+    .Discover-sec img{
+        padding-top: 550px;
+        width: 100%;
+    } 
+    .Discover-main-div{
+        text-align: center;
+    }
+}
+@media (max-width:450px) and (min-width:344px){
+    .Discover-sec img{
+        padding-top: 650px;
+        width: 100%;
+    } 
+    .Discover-main-div{
+        text-align: center;
+    }
+}
+
+.Discover-sec{
+    background-color: rgba(0, 123, 255, 1);
+    margin-top: 80px;
+    padding:40px 0px 40px 0px ;
+}
+
+
+.Discover-child-div h2{
+    font-family: "Inknut Antiqua", serif;
+    font-size:38px;
+    font-weight:400;
+    color:white;
+    max-width: 700px;
+    line-height: 70px;
+}
+
+.Discover-sec img{
+    position: absolute;
+    margin-top: -135px;
+    right: 0px;
+}
+
+.Discover-child-div a{
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:rgba(0, 123, 255, 1);
+    padding: 20px 50px;
+    background-color: white;
+    border-radius: 200px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+/* Hear from Our Travelers */
+
+@media (max-width:991px) and (min-width:767px){
+    .Travelers-sec{
+        margin-top: 300px;
+    }
+    .Travelers-main-div{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .Travelers-child-div{
+        width: 50%;
+    }
+}
+
+@media (max-width:767px) and (min-width:344px){
+    .Travelers-sec{
+        margin-top: 400px;
+    }
+    .Travelers-top-div{
+        text-align: center;
+    }
+    .Travelers-main-div{
+        flex-wrap: wrap;  
+    }
+    .Travelers-child-div{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Travelers-child-div span{
+        right: 40px;
+    }
+}
+
+.Travelers-sec{
+    padding: 80px 0px;
+}
+
+.Travelers-top-div{
+    padding:0px 10px;
+}
+
+.Travelers-main-div{
+    display: flex;
+}
+
+.Travelers-child-div{
+    min-width: 33.33%;
+    padding: 10px;
+}
+
+.Travelers-child-div img{
+width: 100%;
+}
+
+.Travelers-inner-child{
+    padding:100px 13px 50px 13px;
+    border-radius: 40px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    margin-top: -99px;
+}
+
+.Travelers-inner-child h3{
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:500;
+    color:rgba(40, 167, 69, 1);
+}
+
+.Travelers-inner-child p{
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(52, 58, 64, 1);
+}
+
+.Travelers-child-div span{
+    position: absolute;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 2px;
+    margin: 13px 0px 0px 190px;
+    color: rgba(255, 193, 7, 1);
+}
+
+/* footer-sec */
+
+@media (max-width:767px) and (min-width:344px){
+    .footer-top-div{
+        text-align: center;
+    }
+    .footer-main-div{
+        flex-wrap: wrap;  
+        text-align: center;
+    }
+    .footer-child-div{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px !important;
+    }
+    .footer-child-div i{
+        
+    }
+}
+
+.footer-sec{
+    background-image: url('../image/footer\ bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0px 334px 0px;
+}
+
+.footer-main-div{
+    display: flex;
+}
+
+.footer-child-div{
+    padding: 0px 10px;
+    margin-right: 100px;
+}
+
+.footer-child-div p{
+    max-width: 463px;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(255, 255, 255, 1);
+}
+
+.footer-child-div a{
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-size:22px;
+    font-weight:400;
+    color:rgba(255, 255, 255, 1);
+}
+
+.footer-child-div span{
+    display: block;
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:500;
+    color:rgba(255, 255, 255, 1);
+    padding: 0px 0px 40px 27px;
+}
+
+.footer-child-div ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.footer-child-div i{
+    color: rgba(0, 123, 255, 1);
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 20px 20px 0px 0px;
+}
+
+.footer-bottom-div{
+    text-align: center;
+    padding: 26px 0px;
+    font-family: "Inknut Antiqua", serif;
+    font-size:24px;
+    font-weight:500;
+    background-color: rgba(255, 193, 7, 1);
+    color: rgba(0, 123, 255, 1);
+}
